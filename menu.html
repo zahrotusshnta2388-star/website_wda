@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="id">
 
@@ -6,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Menu - E-Cafe Engineering, Politeknik Negeri Jember.">
+    <meta name="description" content="Menu E-Cafe Engineering, pilihan makanan dan minuman favorit.">
 
     <title>Menu | E-Cafe Engineering</title>
 
@@ -19,190 +18,96 @@
     <!-- HEADER -->
     <header class="header">
 
-        <a class="brand" href="index.html">
-
+        <a href="index.html" class="brand">
             <span class="brand-symbol">E</span>
 
             <span>
-                <strong>E-Cafe Engineering</strong>
-                <small>Politeknik Negeri Jember</small>
+                <strong>E-CAFE ENGINEERING</strong>
+                <small>POLITEKNIK NEGERI JEMBER</small>
             </span>
-
         </a>
 
-        <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false">
+        <button class="nav-toggle"
+                aria-label="Buka navigasi"
+                aria-expanded="false">
             ☰
         </button>
 
-        <nav class="navigation">
-            <a href="index.html">Beranda</a>
+         <nav class="navigation">
+            <a class="index.html">Beranda</a>
             <a href="informasi.html">Informasi</a>
-            <a class="active" href="menu.html">Menu</a>
+            <a href="active" href="menu.html">Menu</a>
             <a href="pemesanan.html">Cara pemesanan</a>
             <a href="kontak.html">Kontak</a>
         </nav>
-
-        <a class="button button-small header-cta" href="menu.html">
-            Pesan sekarang ↗
+         <a class="button button-small header-cta" href="kontak.html">
+            Hubungi Kami ↗
         </a>
 
     </header>
 
 
-    <!-- MAIN CONTENT -->
+    <!-- JUDUL HALAMAN -->
+    <section class="page-heading">
+
+        <p class="eyebrow">PILIHAN UNTUKMU</p>
+
+        <h1>Discover Our <em>Menu</em></h1>
+
+        <p>
+            Nikmati berbagai pilihan makanan dan minuman
+            dengan cita rasa terbaik dari E-Cafe Engineering.
+        </p>
+
+    </section>
+
+
+    <!-- DAFTAR MENU -->
     <main>
 
-        <!-- PAGE HEADING -->
-        <section class="page-heading">
-
-            <p class="eyebrow">MENU E-CAFE</p>
-
-            <h1>
-                Pilihan rasa untuk<br>
-                <em>setiap suasana.</em>
-            </h1>
-
-            <p>
-                Temukan makanan dan minuman yang cocok
-                untuk menemani harimu.
-            </p>
-
-        </section>
-
-
-        <!-- MENU SECTION -->
         <section class="section">
 
-            <!-- MENU FILTER -->
-            <div class="filter-row" role="group" aria-label="Filter kategori menu">
+            <div class="section-heading">
 
-                <button class="filter-button active" data-filter="all">
+                <div>
+                    <p class="eyebrow">FRESH & DELICIOUS</p>
+
+                    <h2>Menu <em>Favorit</em></h2>
+                </div>
+
+            </div>
+
+
+            <!-- FILTER MENU -->
+            <div class="filter-row">
+
+                <button class="filter-button active"
+                        data-filter="all">
                     Semua
                 </button>
 
-                <button class="filter-button" data-filter="makanan">
+                <button class="filter-button"
+                        data-filter="makanan">
                     Makanan
                 </button>
 
-                <button class="filter-button" data-filter="minuman">
+                <button class="filter-button"
+                        data-filter="minuman">
                     Minuman
                 </button>
 
             </div>
 
 
-            <!-- MENU GRID -->
-            <div class="full-menu-grid">
+            <!-- MENU DIBUAT OTOMATIS OLEH JAVASCRIPT -->
+            <div class="full-menu-grid" id="menuGrid">
 
-
-                <!-- RAMEN -->
-                <article class="food-card" data-category="makanan">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
-                        alt="Ramen"
-                    >
-
-                    <div>
-                        <span>MAKANAN</span>
-                        <h3>Ramen</h3>
-                        <p>Menu ramen hangat dengan pilihan rasa.</p>
-                    </div>
-
-                </article>
-
-
-                <!-- YAKITORI -->
-                <article class="food-card" data-category="makanan">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
-                        alt="Yakitori"
-                    >
-
-                    <div>
-                        <span>MAKANAN</span>
-                        <h3>Yakitori</h3>
-                        <p>Sajian pilihan untuk teman berkumpul.</p>
-                    </div>
-
-                </article>
-
-
-                <!-- SNACKS -->
-                <article class="food-card" data-category="makanan">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
-                        alt="Pastry"
-                    >
-
-                    <div>
-                        <span>MAKANAN</span>
-                        <h3>Camilan</h3>
-                        <p>Teman santai di sela aktivitas.</p>
-                    </div>
-
-                </article>
-
-
-                <!-- COFFEE -->
-                <article class="food-card" data-category="minuman">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
-                        alt="Es kopi"
-                    >
-
-                    <div>
-                        <span>MINUMAN</span>
-                        <h3>Coffee</h3>
-                        <p>Pilihan kopi untuk menemani harimu.</p>
-                    </div>
-
-                </article>
-
-
-                <!-- ICED DRINKS -->
-                <article class="food-card" data-category="minuman">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
-                        alt="Minuman dingin"
-                    >
-
-                    <div>
-                        <span>MINUMAN</span>
-                        <h3>Iced Drinks</h3>
-                        <p>Minuman dingin yang menyegarkan.</p>
-                    </div>
-
-                </article>
-
-
-                <!-- NON COFFEE -->
-                <article class="food-card" data-category="minuman">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
-                        alt="Minuman cokelat"
-                    >
-
-                    <div>
-                        <span>MINUMAN</span>
-                        <h3>Non Coffee</h3>
-                        <p>Alternatif minuman tanpa kopi.</p>
-                    </div>
-
-                </article>
+                <p class="notice">Memuat menu...</p>
 
             </div>
 
-
-            <!-- MENU NOTICE -->
             <p class="notice">
-                Catatan: nama dan foto di atas merupakan contoh kategori.
-                Sesuaikan dengan daftar menu resmi E-Cafe.
+                * Pilihan menu dapat berubah sesuai ketersediaan.
             </p>
 
         </section>
@@ -215,34 +120,37 @@
 
         <div class="footer-main">
 
-            <a class="brand brand-footer" href="index.html">
+            <a href="index.html" class="brand brand-footer">
 
                 <span class="brand-symbol">E</span>
 
                 <span>
-                    <strong>E-Cafe Engineering</strong>
-                    <small>Politeknik Negeri Jember</small>
+                    <strong>E-CAFE ENGINEERING</strong>
+                    <small>POLITEKNIK NEGERI JEMBER</small>
                 </span>
 
             </a>
 
             <p>
-                Tempat singgah, rasa yang selalu dirindukan.
+                Tempat terbaik untuk menikmati makanan dan minuman.
             </p>
 
             <div class="footer-links">
-                <a href="informasi.html">Informasi</a>
+
+                <a href="index.html">Beranda</a>
+                <a href="tentang.html">Tentang</a>
                 <a href="menu.html">Menu</a>
-                <a href="pemesanan.html">Pemesanan</a>
                 <a href="kontak.html">Kontak</a>
+
             </div>
 
         </div>
 
-
-        <!-- COPYRIGHT -->
         <div class="footer-bottom">
-            © <span data-year></span> E-Cafe Engineering. All rights reserved.
+
+            © <span data-year></span> E-Cafe Engineering.
+            All Rights Reserved.
+
         </div>
 
     </footer>
